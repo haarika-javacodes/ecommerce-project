@@ -1,11 +1,11 @@
 "use client";
-
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { getProducts } from "../../services/productService";
 import ProductCard from "../../components/products/ProductCard";
 
-export default function ProductsPage() {
+function ProductsPageContent() {
   const searchParams = useSearchParams();
   const categoryFromUrl = searchParams.get("category");
   const [products, setProducts] = useState([]);
@@ -212,5 +212,12 @@ export default function ProductsPage() {
       </div>
 
     </main>
+  );
+}
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center">Loading products...</div>}>
+      <ProductsPageContent />
+    </Suspense>
   );
 }
