@@ -1,36 +1,176 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My E-Commerce Store
 
-## Getting Started
+A responsive e-commerce web application developed as part of the **AIdeas Academy Real-Time Frontend Project**.
 
-First, run the development server:
+The project is built using **Next.js, JavaScript, and Tailwind CSS** and uses the **DummyJSON API** to fetch product and customer data.
+
+## Project Features
+
+### Customer Features
+
+* Home page
+* Product listing
+* Product search
+* Category filtering
+* Price filtering
+* Rating filtering
+* Product sorting
+* Pagination
+* Product details
+* Related products
+* Add to Cart
+* Update cart quantity
+* Remove products from Cart
+* Wishlist
+* Remove products from Wishlist
+* Login
+* Register
+* User Profile
+* Checkout
+* Order placement
+* Order history
+
+### Admin Features
+
+* Admin Dashboard
+* Product Management
+* Add Product
+* Edit Product
+* Delete Product
+* Customer Management
+* Order Management
+
+## Technologies Used
+
+* Next.js
+* JavaScript
+* React
+* Tailwind CSS
+* HTML
+* CSS
+* Git
+* GitHub
+* DummyJSON API
+
+## API
+
+This project uses the DummyJSON API for product and user data.
+
+Main API endpoints used:
+
+* Products
+* Product Details
+* Products by Category
+* Users / Customers
+* User Login
+
+API Website:
+
+https://dummyjson.com/
+
+## Project Structure
+
+```text
+ecommerce-project
+│
+├── public
+│
+├── src
+│   ├── app
+│   │   ├── admin
+│   │   │   ├── customers
+│   │   │   ├── dashboard
+│   │   │   ├── orders
+│   │   │   └── products
+│   │   │
+│   │   ├── cart
+│   │   ├── checkout
+│   │   ├── login
+│   │   ├── orders
+│   │   ├── products
+│   │   ├── profile
+│   │   ├── register
+│   │   └── wishlist
+│   │
+│   ├── components
+│   │   ├── layout
+│   │   └── products
+│   │
+│   ├── context
+│   │
+│   └── services
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/haarika-javacodes/ecommerce-project.git
+```
+
+Move into the project folder:
+
+```bash
+cd ecommerce-project
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run the Project
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application in your browser:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Responsive Design
 
-## Learn More
+The application is designed to work on:
 
-To learn more about Next.js, take a look at the following resources:
+* Mobile devices
+* Tablets
+* Laptops
+* Desktop screens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project was tested at different screen sizes including approximately:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* 375px
+* 768px
+* 1024px
+* 1440px
 
-## Deploy on Vercel
+## State Management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React Context API is used for managing:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Cart
+* Wishlist
+* Orders
+
+## GitHub Repository
+
+GitHub Repository:
+
+https://github.com/haarika-javacodes/ecommerce-project
+
+## Project Purpose
+
+This project was developed as a practical **Real-Time Frontend Project for AIdeas Academy's Java Full Stack Development course**.
+
+It demonstrates the implementation of a complete responsive e-commerce frontend using modern frontend technologies and API integration.
