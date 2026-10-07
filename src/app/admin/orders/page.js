@@ -23,25 +23,25 @@ export default function AdminOrdersPage() {
             <table className="w-full text-left">
               <thead className="bg-gray-200">
                 <tr>
-                  <th className="px-4 py-3">Order ID</th>
-                  <th className="px-4 py-3">Date</th>
-                  <th className="px-4 py-3">Products</th>
-                  <th className="px-4 py-3">Total</th>
+                  <th className="px-4 py-3 text-gray-800">Order ID</th>
+                  <th className="px-4 py-3 text-gray-800">Date</th>
+                  <th className="px-4 py-3 text-gray-800">Products</th>
+                  <th className="px-4 py-3 text-gray-800">Total</th>
                 </tr>
               </thead>
 
               <tbody>
                 {orders.map((order) => (
-                  <tr key={order.id} className="border-t">
+                  <tr key={order.id} className="border-t text-gray-800">
                     <td className="px-4 py-3 font-semibold text-gray-800">
                       #{order.id}
                     </td>
 
-                    <td className="px-4 py-3 text-gray-700">
+                    <td className="px-4 py-3 text-gray-800">
                       {order.date}
                     </td>
 
-                    <td className="px-4 py-3 text-gray-700">
+                    <td className="px-4 py-3 text-gray-800">
                       {order.items.length}
                     </td>
 
