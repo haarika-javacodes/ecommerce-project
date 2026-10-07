@@ -33,19 +33,19 @@ export default function AdminOrdersPage() {
               <tbody>
                 {orders.map((order) => (
                   <tr key={order.id} className="border-t">
-                    <td className="px-4 py-3 font-semibold">
+                    <td className="px-4 py-3 font-semibold text-gray-800">
                       #{order.id}
                     </td>
 
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3 text-gray-700">
                       {order.date}
                     </td>
 
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3 text-gray-700">
                       {order.items.length}
                     </td>
 
-                    <td className="px-4 py-3 font-semibold">
+                    <td className="px-4 py-3 font-semibold text-blue-600">
                       ${order.total.toFixed(2)}
                     </td>
                   </tr>
