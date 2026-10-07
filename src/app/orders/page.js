@@ -54,7 +54,7 @@ export default function OrdersPage() {
                   ))}
                 </div>
 
-                <div className="flex justify-between mt-5 text-xl font-bold">
+                <div className="flex justify-between mt-5 text-xl font-bold text-gray-800">
                   <span>Total</span>
                   <span>${order.total.toFixed(2)}</span>
                 </div>
